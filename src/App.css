@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #24c6dc, #514a9d);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.userInput {
+    width: 30rem;
+    padding: 8px 10px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+}
+.btn-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.btn-section button {
+    padding: 8px 24px;
+    outline: none;
+    border-radius: 4px;
+    background-color: blueviolet;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    color: white;
+    border: none;
+}
+hr {
+    height: 2px;
+    color: black;
+    font-weight: 800;
+}
+.result-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.stack {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.stack-element {
+    font-size: 1.4rem;
+    padding: 8px 15px;
+    background-color: powderblue;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+}
+.toast-center {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 9999;
+}
+
+
+
+
+@media screen and (max-width: 540px){
+    .app {
+        width: 400px;
+    }
+    .userInput {
+        width: 23rem;
+    }
+    .btn-section {
+        gap: 5px
+    }
+    .btn-section button {
+        padding: 4px 14px;
+        letter-spacing: 0.8px;
+    }
+    .result-section {
+        gap: 12px;
+    }
+    .stack-element {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+        width: 60%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 470px){
+    
+    .app {
+        width: 300px;
+    }
+    .userInput {
+        width: 17rem;
+    }
+    main {
+        gap: 14px;
+    }
+    .btn-section {
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+    .btn-section button {
+        padding: 4px 8px;
+        letter-spacing: 0.8px;
+    }
+    .result-section {
+        gap: 10px;
+    }
+    .result-section h2 {
+        font-size: 17px;
+    }
+    .stack-element {
+        font-size: 1.2rem;
+        padding: 6px 8px;
+        width: 50%;
+    }
+    .toast-center {
+        width: 260px;
+    }
+
+}
